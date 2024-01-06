@@ -1,0 +1,13 @@
+.section-element-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 300px;
+}
+
+.section-element-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}

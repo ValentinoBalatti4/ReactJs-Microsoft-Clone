@@ -1,0 +1,18 @@
+.announcement-container{
+    background-color: rgb(113, 31, 190);
+    color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.announcement-container a{
+    font-weight: 600;
+}
+
+.announcement-container span{
+    position: absolute;
+    right: 10px;
+}

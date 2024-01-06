@@ -1,0 +1,24 @@
+.footer-container{
+    background-color: #f2f2f2;
+    color: #616161;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    text-align: left;
+    padding:40px;
+    margin-top: 40px;
+}
+
+.footer-container ul{
+    list-style: none;
+}
+
+.footer-container li{
+    margin: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footer-container li:hover{
+    text-decoration: underline;
+}

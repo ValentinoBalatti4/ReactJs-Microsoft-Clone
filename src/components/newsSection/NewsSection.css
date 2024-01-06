@@ -1,0 +1,8 @@
+.news-section-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 60px;
+    gap: 25px;
+
+}
