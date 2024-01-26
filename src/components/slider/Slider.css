@@ -120,3 +120,39 @@
     'GRAD' 0,
     'opsz' 24
 }
+
+@media (max-width: 1082px) {
+    .slide .text-container{
+        padding: 5px;
+        background-color: rgba(220, 220, 220, 0.501);
+        border-radius: 5px;
+    }
+}
+    
+@media (max-width: 678px) {
+    .slide .text-container{
+        top: 20%;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 568px){
+    .slide .text-container {
+        top: 10%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 484px) {
+    .slide .text-container{
+        top: 5%;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .slide .text-container{
+        top: 2%;
+        margin-left: 2%;
+    }
+}
