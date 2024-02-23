@@ -19,13 +19,8 @@ function Slider() {
     }
 
 
-    const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (
-            prevIndex + 1 > images.desktop.length ? prevIndex - 1 : prevIndex + 1
-        ));
-    };
-    const prevSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1));
+    const changeSlide = () => {
+        setCurrentIndex(currentIndex === 0 ? 1 : 0);
     }
 
 
@@ -81,7 +76,7 @@ function Slider() {
             <img src={images[isMobile ? 'mobile' : 'desktop'][currentIndex]} alt={images[currentIndex + 1]}/>
         </div>
         <div className="slider-controlers">
-            <span className="material-symbols-outlined" onClick={prevSlide}>chevron_left</span>
+            <span className="material-symbols-outlined" onClick={changeSlide}>chevron_left</span>
             <div className='slider-indicators'>
                 {
                     images.desktop.map((image, index) => (
@@ -89,7 +84,7 @@ function Slider() {
                     ))
                 }
             </div>
-            <span className="material-symbols-outlined" onClick={nextSlide}>chevron_right</span>
+            <span className="material-symbols-outlined" onClick={changeSlide}>chevron_right</span>
         </div>
     </div>
   )
